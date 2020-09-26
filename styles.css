@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //font-family: "Helvetica", "Arial", sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+body {
+  background-color: #080808;
+}
+
+
+#icon {
+  color: #58ad95;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  height: 300px;
+}
+.carousel-item img {
+  height: 120%;
+  margin: none;
+  padding: none;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  vertical-align: bottom;
+}
+
+.center {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  font-weight: normal;
+}
+.centerContainer1 {
+  margin: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  border: 2px solid lightgrey;
+  border-radius: 7px;
+  text-align: center;
+}
+.centerContainer2 {
+  margin: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  border: 2px solid lightgrey;
+  border-radius: 7px;
+  text-align: center;
+}
+.center h1 {
+  margin: 3%;
+  font-size: 3rem;
+  color: #58ad95;
+  text-align: center;
+}
+.center h2 a {
+  margin: 3%;
+  font-size: 2rem;
+  text-align: center;
+}
+.center p {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 2%;
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  text-align: center;
+  margin: 2em 2em 5em;
+  width: 22rem;
+}
+.card p{
+  margin: 1%;
+  font-size: 1rem;
+  color: black;
+}
+
+.intextLink {
+  color: #54b3a6;
+}
+.intextLink:hover {
+  color: #376b5c;
+  text-decoration: none;
+}
+
+.avatar img {
+  float: left;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.footer {
+  display: flex;
+  align-self:  flex-end;
+  align-items: center;
+  flex-direction: column;
+  font-weight: normal;
+  margin-bottom: 100px;
+}
+#footer-link {
+  display: flex;
+  color: #418e9c;
+  text-decoration: none;
+  margin-top: 30px;
+}
+#footer-link:hover {
+  color: #42b5c9;
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .center p {
+    font-size: 1.25rem;
+  }
+  .carousel-item {
+    height: 225px;
+  }
+  .card {
+    width: 18rem;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .center h1 {
+    font-size: 2.2rem;
+  }
+  .center h2 a {
+    margin: 3%;
+    font-size: 1.6rem;
+    color: #58ad95;
+  }
+  .center p {
+    font-size: 1rem;
+  }
+  .carousel-item {
+    height: 175px;
+  }
+  .card {
+    width: 22rem;
+  }
+}
+@media only screen and (max-width: 539px) {
+  .center h1 {
+    font-size: 1.8rem;
+  }
+  .center h2 a {
+    margin: 3%;
+    font-size: 1.2rem;
+    color: #58ad95;
+  }
+  .center p {
+    font-size: 0.8rem;
+  }
+  .carousel-item {
+    height: 150px;
+  }
+  .card {
+    width: 18rem;
+  }
+}
